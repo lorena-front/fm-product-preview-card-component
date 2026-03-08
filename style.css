@@ -66,10 +66,42 @@ main {
     width: 50%;
 }
 
+.text-group .text-type {
+    font-family: var(--font-montserrat);
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.text-group .text-description {
+    color: var(--grey);
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.text-group h1 {
+    font-family: var(--font-fraunces);
+    color: var(--black);
+}
+
 .text-price {
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+
+.text-price h2 {
+    font-size: 2rem;
+    font-family: var(--font-fraunces);
+    color: var(--green-500);
+}
+
+.text-price p {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size);
+    color: var(--grey);
+    font-weight: 600;
+    text-decoration: line-through;
 }
 
 .card-button {
@@ -101,6 +133,6 @@ main {
     }
 
     main {
-        padding: 2rem 0
+        padding: 2rem 0;
     }
 }
