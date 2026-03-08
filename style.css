@@ -72,6 +72,11 @@ main {
     gap: 3rem;
 }
 
+.card-button {
+    padding: 0.8rem;
+    width: 95%;
+}
+
 /* Mobile */
 
 @media (max-width: 768px) {
@@ -92,5 +97,10 @@ main {
 
     .text-group {
         width: unset;
+        gap: 1rem;
+    }
+
+    main {
+        padding: 2rem 0
     }
 }
