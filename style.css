@@ -1,4 +1,5 @@
 /* Imports */
+
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Reset */
@@ -42,7 +43,7 @@ main {
 /* Card */
 
 .card {
-    max-width: 40rem;
+    max-width: 37rem;
     background-color: var(--white);
     border-radius: 0.5rem;
     display: flex;
@@ -68,7 +69,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    gap: 1.4rem;
     margin: 1.25rem;
     width: 50%;
 }
@@ -77,6 +78,7 @@ main {
     font-family: var(--font-montserrat);
     color: var(--grey);
     font-weight: 500;
+    font-size: var(--font-size);
 }
 
 .text-group .text-description {
@@ -89,13 +91,12 @@ main {
 .text-group h1 {
     font-family: var(--font-fraunces);
     color: var(--black);
-    white-space: break-spaces;
 }
 
 .text-price {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .text-price h2 {
@@ -108,14 +109,19 @@ main {
     font-family: var(--font-montserrat);
     font-size: var(--font-size);
     color: var(--grey);
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: line-through;
 }
+
+.desktop-break {
+    display: block;
+}
+
 
 /* Button */
 
 .card-button {
-    padding: 0.9rem;
+    padding: 1rem;
     width: 95%;
     background-color: var(--green-500);
     color: var(--white);
@@ -174,11 +180,11 @@ main {
         gap: 1rem;
     }
 
-    .text-group h1 {
-        white-space: unset;
-    }
-
     main {
         padding: 2rem 0;
+    }
+
+    .desktop-break {
+        display: none;
     }
 }
